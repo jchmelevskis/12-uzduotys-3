@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+  
+  
+    --Very-dark-blue: hsl(233, 47%, 7%);
+    --Dark-desaturated-blue: hsl(244, 38%, 16%);
+    --Soft-violet: hsl(277, 64%, 61%);
+   
+    --White: hsl(0, 0%, 100%);
+    --Slightly-white: hsla(0, 0%, 100%, 0.75);
+    --Slightly-white: hsla(0, 0%, 100%, 0.6);
+
+
+
+
+
+
+  /* font weights */
+  --fw-500: 500;
+  --fw-600: 600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.baba {
+min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards {
+ 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-dark-blue);
+    padding: 100px;
+}
+
+.cards__container {
+    display: flex;
+  
+}
+
+.cards__text {
+ background-color: var(--Dark-desaturated-blue);
+ padding: 50px 50px 0px 50px;
+ height: 300px;
+ border-bottom-left-radius: 10px;
+ border-top-left-radius: 10px;
+ 
+}
+
+.cards__text span {
+    color: var(--Soft-violet)
+}
+
+.cards__header {
+    font-family: Inter;
+    font-size: 25px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.cards__paragraph {
+    width: 260px;
+    font-family: Lexend Deca;
+    font-size: 10px;
+    color: var(--Slightly-white);
+    margin-bottom: 50px;
+    line-height: 1.6 ;
+}
+
+.cards__bottom {
+    display: flex;
+    justify-content: space-between; 
+    margin-right: 60px;
+}
+
+p.cards__price{
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 510;
+    margin-bottom: 5px;
+}
+p.cards__names {
+    font-family: Lexend Deca;
+    font-size: 8px;
+    color: var(--Slightly-white);
+}
+
+
+
+
+.cards__image  {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 300px;
+    position: relative;
+
+}
+
+.cards__image::after {
+  content: "";
+  /* display: block; */
+  position: absolute;
+  background: var(--Soft-violet);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+
+img {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 300px;
+}
